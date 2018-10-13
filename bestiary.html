@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--5ETOOLS_VERSION-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Yaratık Ansiklopedisi - 5eTürkçe</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.png">
+
+	<script type="text/javascript" src="lib/js-cookie.js"></script>
+	<script type="text/javascript" src="js/styleswitch.js"></script>
+	<script type="text/javascript" src="js/navigation.js"></script>
+
+	<style>
+		#wrp-profbonusdice {
+			display: inline-block;
+		}
+	</style>
+</head>
+
+<body>
+<div class="viewport-wrapper">
+	<header class="hidden-xs hidden-sm">
+		<div class="container">
+
+			<h1>Yaratık Ansiklopedisi</h1>
+			<p>Solda isimle ara ve yaratık ismine tıklayıp sağda görüntüle.</p>
+		</div>
+	</header>
+	<nav class="container" id="navigation">
+		<ul class="nav nav-pills" id="navbar">
+		</ul>
+	</nav>
+
+	<div class="container view-col-wrapper">
+		<div class="view-col" id="listcontainer">
+			<div class="input-group" id="filter-search-input-group">
+				<input type="search" id="search" class="search form-control" placeholder="Yaratık bul...">
+				<span class="input-group-btn">
+						<button class="btn btn-default" type="button" id="reset">Reset</button>
+					</span>
+			</div>
+
+			<div id="filtertools" class="sortlabel btn-group">
+				<button class="col-xs-4 col-xs-4-2 sort btn btn-default btn-xs" type="button" data-sort="name">İsim
+				</button>
+				<button class="col-xs-2 sort btn btn-default btn-xs" type="button" data-sort="source">
+					Kaynak
+				</button>
+				<button class="col-xs-4 col-xs-4-1 sort btn btn-default btn-xs" type="button" data-sort="type">Tip
+				</button>
+				<button class="col-xs-1 col-xs-1-7 sort btn btn-default btn-xs" type="button" data-sort="cr">CR</button>
+			</div>
+
+			<ul class="list monsters">
+				<!-- populate with JS -->
+			</ul>
+
+			<div class="monster-disclaimer">"3pp" ile etiketlenmiş içerikler üçüncü parti kaynaklardan alınmıştır, Kobold
+				Press'den <em>Tome of Beasts</em> gibi. Dikkatli kullanın.
+			</div>
+		</div>
+
+		<div id="contentwrapper" class="view-col">
+			<div id="sublistcontainer">
+				<div id="sublistsort" class="sortlabel btn-group">
+					<button class="col-xs-4 sort btn btn-default btn-xs" data-sort="name">İsim</button>
+					<button class="col-xs-3 sort btn btn-default btn-xs" data-sort="type">Tip</button>
+					<button class="col-xs-3 sort btn btn-default btn-xs" data-sort="cr">CR</button>
+					<button class="col-xs-2 sort btn btn-default btn-xs" data-sort="count">Sayı</button>
+				</div>
+				<ul class="list submonsters">
+					<!-- populate with JS -->
+				</ul>
+				<div class="row">
+					<span class="col-xs-7 text-align-right">Toplam:</span>
+					<span class="col-xs-5 no-wrap" id="totalcr" style="padding-left: 1px"></span>
+				</div>
+			</div>
+
+			<div id="stat-tabs" class="wrp-stat-tab">
+				<div id="tabs-right"></div>
+			</div>
+
+			<table id="pagecontent" class="stats monster">
+				<tr><th class="border" colspan="6"></th></tr>
+				<tr><td colspan="6" class="initial-message">Burada görüntülemek için listeden bir varlık seç</td></tr>
+				<tr><th class="border" colspan="6"></th></tr>
+			</table>
+			<br>
+			<div class="text-align-center">
+				<button class="btn btn-default btn-sm" id="btn-printbook">Yazıcı Görüntüsü</button>
+				<button class="btn btn-default btn-sm btn-file" id="manage-brew">Homebrew Yönet</button>
+			</div>
+		</div>
+	</div>
+</div>    <!--5ETOOLS_SCRIPT_ANCHOR-->
+<script type="text/javascript" src="lib/jquery.js"></script>
+<script type="text/javascript" src="js/omnisearch.js"></script>
+<script type="text/javascript" src="js/history.js"></script>
+<script type="text/javascript" src="js/multisource.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/filter.js"></script>
+<script type="text/javascript" src="js/entryrender.js"></script>
+<script type="text/javascript" src="js/bestiary.js"></script>
+<script type="text/javascript" src="lib/list.js"></script>
+<script type="text/javascript" src="lib/bootstrap.js"></script>
+<script type="text/javascript" src="lib/elasticlunr.js"></script>
+</body>
+</html>
