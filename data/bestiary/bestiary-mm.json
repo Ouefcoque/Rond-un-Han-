@@ -4,7 +4,7 @@
 			"name": "Aarakocra",
 			"size": "M",
 			"type": {
-				"type": "humanoid",
+				"type": "İnsansı",
 				"tags": [
 					"aarakocra"
 				]
@@ -37,15 +37,15 @@
 			"cr": "1/4",
 			"trait": [
 				{
-					"name": "Dive Attack",
+					"name": "Dalış Saldırısı",
 					"entries": [
-						"If the aarakocra is flying and dives at least 30 ft. straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 3 ({@dice 1d6}) damage to the target."
+						"Eğer Aarakocra uçarken en az 30 ft. doğrudan hedefe dalış gerçekleştirip vurursa, saldırısı fazladan 3 ({@dice 1d6}) hasar verir."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Talon",
+					"name": "Pençe",
 					"entries": [
 						"Yakın Dövüş Silahı Saldırısı: {@hit +4} vurmak için, erişim 5 ft., tek hedef. Vurunca: 4 ({@dice 1d4+2}) kesme hasarı."
 					]
@@ -57,9 +57,9 @@
 					]
 				},
 				{
-					"name": "Summon Air Elemental",
+					"name": "Hava Elemeti Çağrısı",
 					"entries": [
-						"Five aarakocra within 30 feet of each other can magically summon an {@creature air elemental}. Each of the five must use its action and movement on three consecutive turns to perform an aerial dance and must maintain concentration while doing so (as if concentrating on a spell). When all five have finished their third turn of the dance, the elemental appears in an unoccupied space within 60 feet of them. It is friendly toward them and obeys their spoken commands. It remains for 1 hour, until it yada all its summoners die, yada until any of its summoners dismisses it as a bonus action. A summoner can't perform the dance again until it finishes a short rest. When the elemental returns to the Elemental Plane of Air, any aarakocra within 5 feet of it can return with it."
+						"30 feet içindeki 5 Aarakocra büyülü bir şekilde {@creature air elemental} çağıra bilir. Beş tanesi, bir hava dansı yapmak için üç tur boyunca süren aksiyon ve hareket hamlelerini kullanmalı ve bunu yaparken konsantrasyonunu korumalıdır (bir büyü üzerinde yoğunlaşıyormuş gibi). Beşide 3 turluk dansını bitirdiğinde, elemental yaratık 60 feetlik bir alanda ortaya çıkar. Onlara karşı dostça yaklaşık onların sözlü komutlarına uyar. 1 saat boyunca hayatta kalır yada tüm çağrıcılar ölünceye kadar. Herhangi bir çağrıcı bonus eylemini iptal edersede çağrılan yaratık yok olur. Çağrıcılar kısa bir dinlenme gerçekleştirene kadar tekrardan dans edemez. Elemental hava düzlemine geri döndüğünde eğer 5 feet yanında bir Aarakocra varsa oda onunla birlikte dönebilir."
 					]
 				}
 			],
